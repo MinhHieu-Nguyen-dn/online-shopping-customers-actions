@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "61a836d8725df2a823ebb67c"
+  },
+  "name": "iPhone12",
+  "type": "phone",
+  "price": 26500000,
+  "imgUrl": "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/iphone-12-pro-max-2.png"
+},{
+  "_id": {
+    "$oid": "61a837a9725df2a823ebb67d"
+  },
+  "name": "NJ80",
+  "type": "keyboard",
+  "price": 2500000,
+  "imgUrl": "https://bizweb.dktcdn.net/100/436/596/products/4454a428-5dc3-4d6d-a3d6-0b679621018d.jpg?v=1631986473020"
+},{
+  "_id": {
+    "$oid": "61a83810725df2a823ebb67e"
+  },
+  "name": "MSI GF63ThinSCSR",
+  "type": "laptop",
+  "price": 25000000,
+  "imgUrl": "https://anphat.com.vn/media/product/32404_32404_32404_msi_gf63_thin_10scsr_077vn_5_29e8819d16614e64853df18557c7057f_master.png"
+},{
+  "_id": {
+    "$oid": "61b2b614ca25cf833c898b84"
+  },
+  "name": "Bo 5 day ngu sac tap full body",
+  "type": "Gym",
+  "price": 350000,
+  "imgUrl": "https://cf.shopee.vn/file/b251c9bd6c04c32be115ba9d1c59d82f"
+},{
+  "_id": {
+    "$oid": "61b2b66aca25cf833c898b85"
+  },
+  "name": "Tham tap yoga chong truot tpe cao cap 2 lop",
+  "type": "Gym",
+  "price": 140000,
+  "imgUrl": "https://cf.shopee.vn/file/0f8f851bcbd6bbbc0b2caacb55a8a8a4"
+}]

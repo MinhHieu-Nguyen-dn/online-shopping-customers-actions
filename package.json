@@ -1,0 +1,22 @@
+{
+  "name": "test2711_online_shopping",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev:start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "expressjs": "^1.0.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.0.13",
+    "nodemon": "^2.0.15"
+  }
+}

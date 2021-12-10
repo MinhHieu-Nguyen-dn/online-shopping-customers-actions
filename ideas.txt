@@ -1,0 +1,51 @@
+online shopping app: user search product -> choose: save to cart
+
+database:
+
+model 1: products
+name: string
+type: string
+price: float
+imgUrl: string
+
+model 2: invoices
+user: id (ref id from model users)
+cart: id (ref id form model carts)
+bill: float
+
+model 3: users
+name: string
+phone: string
+
+(stop) model 4: cart
+user: id (ref id from model users)
+product: 
+
+flow: [1 product first]
+
+-> input: (json)
+name: string (ref name from model products)
+quantity: number
+
+-> ouput: (json)
+(save to model invoices)
+bill: float
+
+build:
+connect mongodb
+build schemas (model)
+
+localhost:3000
+get / -> landing page
+get /products -> list all products
+post /cart (input userId)
+	-> findOne successfully -> show cart
+	-> findOne fail -> create new Cart, response: empty
+post /invoice (input userId, all, payListId)
+	-> all = True (payListId = null) -> price * quantity
+	-> all = False -> payListId: quantity * price (from productId)
+post /cart/add (input userId, products: [{product, quantity}]) -> show new cart
+post /cart/delete (input userId, all, listIdInCartToDelete) 
+	-> all = True (listIdInCartToDelete = null) -> show new cart
+	-> all = False, listIdInCartToDelete -> show new cart
+post /cart/update (input userId, inCartId, newQuantity) -> show new cart
